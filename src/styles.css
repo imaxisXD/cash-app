@@ -1,4 +1,102 @@
 .App {
   font-family: sans-serif;
   text-align: center;
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #a388bf;
+}
+#denomination-div {
+  width: 98vw;
+  position: relative;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  overflow-x: auto;
+}
+#currency-table {
+  border-collapse: separate !important;
+  width: 80vw;
+  margin: 1vw auto;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 0px;
+  background-color: #99ffbb;
+}
+#currency-table td {
+  padding: 10px;
+  margin: 0px;
+  background-color: #c7ffda;
+  cursor: pointer;
+  transition-duration: 0.2s;
+}
+#currency-table td:hover {
+  background-color: #ffffffb2;
+}
+#currency-table th {
+  padding: 5px;
+  color: rgb(42, 51, 44);
+  background-color: #99ffbb;
+  transition-duration: 0.2s;
+}
+#currency-table th:hover {
+  background-color: #54e484b0;
+  color: white;
+}
+#div-container {
+  width: 100vw;
+  position: relative;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+}
+input {
+  display: block;
+  padding: 0.3rem;
+  margin: 0.2rem;
+  border: 0.1rem solid black;
+  border-radius: 0.8rem;
+  font-size: 1rem;
+  width: 50vw;
+  outline: none;
+}
+input:focus {
+  border: 3px solid rgba(81, 203, 238, 1);
+  box-shadow: 0 0 7px rgba(81, 203, 238, 1);
+}
+button {
+  cursor: pointer;
+  padding: 0.5rem;
+  margin: 1rem;
+  font-weight: bold;
+  font-size: 1.1rem;
+  border-radius: 0.8rem;
+  border: 0.1rem solid black;
+  background-color: #99ffbb;
+  box-shadow: 0 0 10px rgba(81, 203, 238, 1);
+  transition-duration: 0.5s;
+}
+button:hover {
+  padding: 0.5rem 1rem;
+  box-shadow: 0 0 50px rgba(81, 203, 238, 1);
+  color: white;
+  background-color: #39df6de3;
+}
+button:disabled,
+button[disabled] {
+  opacity: 0.6;
+  cursor: not-allowed;
+  background-color: #e3f5e9bd;
+  color: rgb(92, 85, 85);
+  box-shadow: 0 0 0px;
+}
+p {
+  margin: 1.5rem 1rem;
+  font-weight: bold;
+  color: white;
 }
