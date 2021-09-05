@@ -21,10 +21,6 @@ ReactDOM.render(
           </a>
         </li>
       </ul>
-      <script
-        src="https://kit.fontawesome.com/a8bef643d9.js"
-        crossorigin="anonymous"
-      ></script>
     </footer>
   </StrictMode>,
   rootElement
